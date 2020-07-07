@@ -36,19 +36,14 @@
         <div class="toDo">
 
           <ol id="toDoList">
-            <li class="listItem">caio<span class="delete"><i class="fas fa-trash-alt"></i></span></li>
-            <li class="listItem">caio<span class="delete"><i class="fas fa-trash-alt"></i></span></li>
-
-            <li class="listItem">caio<span class="delete"><i class="fas fa-trash-alt"></i></span></li>
-
-            <li class="listItem">caio<span class="delete"><i class="fas fa-trash-alt"></i></span></li>
-
-            <li class="listItem">caio<span class="delete"><i class="fas fa-trash-alt"></i></span></li>
-
 
           </ol>
 
         </div>
+
+        <!-- Start message wrapper -->
+        <div class="messageWrapper"></div>
+        <!-- End message wrapper -->
 
       </main>
 
@@ -56,11 +51,17 @@
 
 
     <!-- Javascript -->
+    <script type="text/javascript" src="js/function.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <!-- Handlebars tamplate -->
     <script id="itemList-template" type="text/x-handlebars-template">
-      <li class="listItem">{{text}}<span class="delete"><i class="fas fa-trash-alt"></i></span></li>
+      <li data_id="{{id}}" class="listItem">{{text}}<span><i class="delete fas fa-trash-alt"></i></span></li>
     </script>
+
+    <script id="message-template" type="text/x-handlebars-template">
+      <p>{{message}}</p>
+    </script>
+    <!-- End handlebars template -->
 
   </body>
 </html>
