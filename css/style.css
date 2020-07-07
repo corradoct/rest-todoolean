@@ -1,0 +1,60 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;               /*DA CANCELLARE SE SI USA UN FRAMEWORK*/
+  box-sizing: border-box;
+}
+/* FINE RESET */
+
+/* REGOLE GENERALI */
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: gray;
+  font-size: 1.5em;
+}
+/* FINE REGOLE GENERALI */
+
+
+/* REGOLE HEADER */
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: #000;
+  color: #fff;
+  padding: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: darkred;
+}
+label {
+  display: block;
+}
+#inputBar {
+  width: 350px;
+  padding: 3px;
+}
+#send {
+  padding: 3px 10px;
+}
+/* FINE REGOLE HEADER */
+
+/* REGOLE MAIN */
+main {
+  width: 100%;
+  height: 90vh;
+  padding: 0 35px;
+}
+li.listItem  {
+  padding: 10px 0;
+}
+.delete {
+  cursor: pointer;
+  color: darkred;
+  font-size: 20px;
+  margin-left: 15px;
+}
+/* FINE REGOLE MAIN */
